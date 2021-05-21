@@ -18,13 +18,13 @@ public class ColorFlagPrinter {
 
     }
 
-    public synchronized void printColor(String color,int i , int j){
+    public void printColor(String color,int i , int j){
         System.out.print(ESC+(i)+"G"+ESC+(j)+"d");
         System.out.print(color);
     }
 
 
-    public String getColor() {
+    public synchronized String getColor() {
         return color+" ";
     }
 
