@@ -8,9 +8,6 @@ public class ColorFlagPrinterThread extends Thread {
     private ColorFlagPrinter cfp;
     public static final String RESET = "\u001B[0m";
 
-
-    public final static String ESC   = "\u001b[";
-
     public ColorFlagPrinterThread(int sleep,ColorFlagPrinter cfp) {
         this.sleep = sleep;
         this.cfp = cfp;
