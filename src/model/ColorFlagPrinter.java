@@ -1,12 +1,12 @@
 package model;
 
 public class ColorFlagPrinter {
-    public final static String ESC   = "\u001b[";
     private  String color;
     private int lines;
     private int columns;
     private int lastLine;
     private int lastColumns;
+    public final static String ESC   = "\u001b[";
 
 
     public ColorFlagPrinter(String color, int lines, int columns, int lastLine, int lastColumns) {
@@ -18,29 +18,27 @@ public class ColorFlagPrinter {
 
     }
 
-    public void printColor(String color,int i , int j){
-        System.out.print(ESC+(i)+"G"+ESC+(j)+"d");
-        System.out.print(color);
-    }
 
-
-    public synchronized String getColor() {
+    public String getColor() {
         return color+" ";
     }
 
-    public int getLines() {
+    public  int getLines() {
         return lines;
     }
 
-    public int getColumns() {
+    public  int getColumns() {
         return columns;
     }
 
-    public int getLastLine() {
+    public  int getLastLine() {
         return lastLine;
     }
 
-    public int getLastColumns() {
+    public  int getLastColumns() {
         return lastColumns;
     }
+
+
+
 }

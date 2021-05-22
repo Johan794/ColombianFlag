@@ -24,9 +24,9 @@ public class Main {
          blue = new ColorFlagPrinter(BLUE_BACKGROUND,11,0,15,80);
          red = new ColorFlagPrinter(RED_BACKGROUND,16,0,20,80);
 
-        threadYellow = new ColorFlagPrinterThread(5,yellow);
-        threadBlue = new ColorFlagPrinterThread(23,blue);
-        threadRed = new ColorFlagPrinterThread(50,red);
+        threadYellow = new ColorFlagPrinterThread(10,yellow);
+        threadBlue = new ColorFlagPrinterThread(26,blue);
+        threadRed = new ColorFlagPrinterThread(33,red);
 
         System.out.print(ESC+"2J");
         threadYellow.start();
